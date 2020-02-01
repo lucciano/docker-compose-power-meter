@@ -18,3 +18,7 @@
    pip3 install docker-compose
    ~~~
 
+## Configuration
+
+ * Create InfluxDB Database and powermeter
+ * Configure Grafana users, datasource, and graphs
