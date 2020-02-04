@@ -5,6 +5,7 @@
  * Install Raspbian
    * Setup Networking, Wifi or Ethernet (Recomended)
    * Setup SSH (Recomended)
+   * Setup avahi daemon (Recomended)
 
  * Install Docker
 
@@ -22,3 +23,8 @@
 
  * Create InfluxDB Database and powermeter
  * Configure Grafana users, datasource, and graphs
+
+
+## Backups:
+
+ * Data is persisted on volumes and generaly on /var/lib/docker/volumes/
