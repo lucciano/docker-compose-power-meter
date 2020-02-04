@@ -5,7 +5,7 @@ services:
     build: 
       context: ./mdbus
     privileged: true
-    command: mbusd -L - -p /dev/ttyUSB0 -s 9600 -m 8N1  -d -v9
+    command: mbusd -L - -p /dev/ttyUSB0 -s 9600 -m 8N1  -d -v0
     ports:
       - 502:502
     volumes:
@@ -14,7 +14,7 @@ services:
     restart: unless-stopped
     build:
       context: ./power-meter
-    command: bash -c 'cd PowerMeter-Reader; while true; do python main.py; sleep 20; done'
+    command: bash -c 'cd PowerMeter-Reader; while true; do python dataQuery.py; sleep 20; done'
     volumes:
       - ./settings.py:/PowerMeter-Reader/settings.py
 

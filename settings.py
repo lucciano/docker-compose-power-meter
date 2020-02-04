@@ -21,9 +21,9 @@ InfluxDBConfig = [
     {
         'host': 'influxdb',
         'port':  8086,
-        'username': 'powermeter', 
-        'password':'powermeter',
-        'database': 'powermeter'
+        'username': 'admin', 
+        'password':'admin',
+        'database': 'db0'
     }
 ]
 
