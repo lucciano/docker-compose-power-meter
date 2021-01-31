@@ -1,4 +1,4 @@
-FROM alpine
+FROM arm32v6/alpine:3.12.3
 RUN apk update && \
     apk upgrade && \
     apk --update add \
